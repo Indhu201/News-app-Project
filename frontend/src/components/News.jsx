@@ -6,7 +6,7 @@ import Newsboard from "./Newsboard";
 const App=()=>{
   const[category,setCategory]=useState("general");
   return(
-    <div>
+    <div className="row justify-content-center">
       <Navbars setCategory={setCategory} />
       <Newsboard category={category} />
     </div>

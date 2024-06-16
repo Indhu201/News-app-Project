@@ -3,6 +3,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "./shad/ui/popover";
 import { Bookmark, Cloud, Compass, Flame, Heart, Home, Instagram, InstagramIcon, Map, Menu, MessageCircle, Newspaper, NotebookIcon, PlusSquare, Save, Search, Settings, Sun, TrendingUpIcon, User, User2 } from "lucide-react";
 import { UserButton, UserProfile, useSession, useUser } from "@clerk/clerk-react";
 import Weather from "./Weather";
+import Liked from "@/pages/Liked";
 
 
 const Sidebar = () => {
@@ -37,12 +38,19 @@ const Sidebar = () => {
                     </div>
             </div>
             <div className="flex flex-col gap-2">
+                    
+                    <a href="/relative/path/to/your/component" className="link-class">
                     <div className="w-full p-3 rounded-lg flex gap-2.5 cursor-pointer hover:bg-neutral-200/50 transition-all duration-500">
                     <Heart/>
-                    <p className=" text-neutral-900 lg:block hidden font-bold">Likes</p>
-
+                            <p className="text-neutral-900 lg:block hidden font-bold">
+                                Liked
+                            </p>
                     </div>
+            </a>
             </div>
+
+
+            
             <div className="flex flex-col gap-2">
                     <div className="w-full p-3 rounded-lg flex gap-2.5 cursor-pointer hover:bg-neutral-200/50 transition-all duration-500">
                     <Save/>
